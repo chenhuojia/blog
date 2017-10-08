@@ -12,7 +12,7 @@
 // 应用行为扩展定义文件
 return [
     // 应用初始化
-    'run'      => [
+    'UserToken'      => [
         'api\common\behavior\UserToken',
     ],
     'sql'      => [

@@ -10,7 +10,7 @@ class BaseController extends ApiController
     {   
         parent::__construct();        
         $config=Config::load(APP_PATH.'extra/v1/nologin.php');
-        $message = Hook::listen('run',$config['nologin']);       
+        $message = Hook::listen('UserToken',$config['nologin']);       
         if($message[0]['error']==200){
               return true;
         }
