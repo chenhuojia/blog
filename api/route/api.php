@@ -7,6 +7,7 @@ Route::any('alipayRefund','v1/Pay/alipayRefund');
 Route::get('index','v1/Index/index'); */
 //首页
 Route::get('/','v1/Index/index');
-Route::get('rec','v1/Index/rec');
-Route::get('getCate','v1/Category/getCategory');
-Route::get('deatil','v1/Article/index');
+Route::get(':version/rec',':version/Index/rec');
+Route::get(':version/getCate',':version/Category/getCategory');
+Route::get(':version/deatil/:id',':version/Article/index');
+Route::get(':version/cate/:id/:page/:pagesize',':version/Category/getArticles');
