@@ -11,5 +11,5 @@ Route::get(':version/rec',':version/Index/rec');
 Route::get(':version/getCate',':version/Category/getCategory');
 Route::get(':version/deatil/:id',':version/Article/index');
 Route::get(':version/cate/:id/:page/:pagesize',':version/Category/getArticles');
-
 Route::get(':version/inc',':version/Index/redisc');
+Route::get(':version/sendSms',':version/Index/sendSms');
